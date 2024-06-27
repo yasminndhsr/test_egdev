@@ -54,3 +54,25 @@
 width: fit-content;
 height: 30px;
 }
+
+.card-login{
+  width: 700px;
+  border-radius: 15px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-container img{
+  width:15%;
+  height: 15%;
+  margin-right: 0%;
+}
+
+.logo-container h5 {
+  margin: 0;
+}
