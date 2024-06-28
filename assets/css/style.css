@@ -20,6 +20,7 @@
 .card-product{
     width: fit-content;
 }
+
 .img-about{
     width: 280px;
   margin-top: -70px;
@@ -29,6 +30,7 @@
     width: fit-content;
     margin-top: -10px;
 }
+
 .mt-10{
   margin-top: 100px;
 }
@@ -51,7 +53,7 @@
 }
 
 .badge-footer{
-width: fit-content;
+width: max-content;
 height: 30px;
 }
 
@@ -75,4 +77,8 @@ height: 30px;
 
 .logo-container h5 {
   margin: 0;
+}
+
+.banner-item{
+  width: 950px;
 }

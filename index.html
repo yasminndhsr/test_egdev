@@ -12,27 +12,28 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="#">Turned In</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Cek Pesanan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Cara Order</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-success">Login</button>
-                </div>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo.png" alt="Logo" width="45" height="24" class="d-inline-block align-text-top ms-5">
+                <span class="fw-bold">Turned In</span>
+              </a>
+              <div class="collapse navbar-collapse justify-content-center align-items-center me-" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cek Pesanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cara Order</a>
+                  </li>
+                </ul>
+              </div>
+              <a type="button" class="btn btn-success me-5 py-1" href="/login.html">Login</a>
             </div>
-        </nav>
+          </nav>
         <!-- Navbar End -->
+
         <div class="w-100 bg-warning py-3">
-            <div class="text-center">
+            <div class="text-center text-light">
                 <span>Cek turnitin 24 jam !!!</span>
             </div>
         </div>
@@ -40,7 +41,8 @@
     
     <!-- Main Section -->
     <main>
-        <div class="container py-4">
+        <!--Banner-->
+        <div class="container py-4 banner-item">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,49 +70,53 @@
                 </button>
             </div>
         </div>
+        <!--Banner End-->
 
         <!-- Product Section -->
         <div class="container">
             <div class="row mt-5" id="product-area">
             </div>
         </div>
+        <!--Product Section End-->
 
+        <!--Product Info-->
         <div class="w-100 bg-primary mt-5">
-            <div class="container">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 align-items-center">
                         <img src="/assets/img/cartoon1.png" alt="" class="img-fluid img-about">
                     </div>
                     <div class="col-8 mt-5">
                         <div class="text-center fw-bold text-light">
-                            <span>Apa itu Turnedin?</span>
-                            <p>Turnedin adalah layanan cek plagiasi otomatis berbasis turnitin PERTAMA di Indonesia!!</p>
+                            <h3 class="mb-3">Apa itu Turnedin?</h3>
+                            <p class="fw-normal text-start">Turnedin adalah layanan cek plagiasi otomatis berbasis turnitin <span class="fw-bold">PERTAMA</span> di Indonesia!!</p>
                         </div>    
                     </div>
                 </div>
             </div>
         </div>
+        <!--Product Info End-->
         
         <!-- Ulasan Pengguna -->
-        <div class="container mt-5">
+        <div class="container mt-5 p-5">
             <div class="text-center">
-                <h1 class="fw-bold mb-5">Apa Kata Mereka</h1>  
+                <h3 class="fw-semi mb-5">Kata Mereka</h3>  
             </div>
             <div class="row" id="testi-area">
                 </div>
             </div>
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-5 p-5">
             <div class="text-center">
-                <h1 class="fw-bold mb-2">Biar apa pake turned in?</h1>
-                <h4 class="fw-bold mb-0 text-warning">Biar apa pake turned in?</h4>
+                <h2 class="fw-semi mb-2">Biar apa pake turned in?</h2>
+                <h5 class="fw-semi mb-0 text-warning">Biar apa pake turned in?</h5>
             </div>
         </div>
         
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5 p-5 justify-content-center">
             <div class="container">
-                <div class="row">
+                <div class="row"> 
                     <div class="col-4 border-end">
                         <div class="row">
                             <div class="col-4">
@@ -125,22 +131,22 @@
                     <div class="col-4 border-end">
                         <div class="row">
                             <div class="col-4">
-                                <img src="https://turnedin.id/img/logo/1714118487566.png" class="img-fluid">                    
+                                <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">                    
                             </div>
                             <div class="col-8">
-                                <span class="m-0 fw-bold">Kami gak libur demi kamu</span>
-                                <p class="ms-0">Layanan Turned In buka 24 jam, kami siap layani kamu kapanpun dimanapun</p>
+                                <span class="m-0 fw-bold">Cepet? Jelas udah otomatis ko</span>
+                                <p class="ms-0">Turned In gak bakal ketiduran kok :( udah full otomatis semuanyaaa</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="row">
                             <div class="col-4">
-                                <img src="https://turnedin.id/img/logo/1714118487566.png" class="img-fluid">                    
+                                <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">                    
                             </div>
                             <div class="col-8">
-                                <span class="m-0 fw-bold">Kami gak libur demi kamu</span>
-                                <p class="ms-0">Layanan Turned In buka 24 jam, kami siap layani kamu kapanpun dimanapun</p>
+                                <span class="m-0 fw-bold">Kalo ada tanya tanya susah dong?</span>
+                                <p class="ms-0">Gak ygy, ada mimin yang siap jawab pertanyaan mu kok hehe !!</p>
                             </div>
                         </div>
                     </div>
@@ -150,12 +156,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-100 bg-primary mt-5 py-3">
+    <footer class="w-100 bg-primary mt-5 py-4">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <h1 class="text-light fw-bold">Turnedin</h1>
-                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="https://turnedin.id/img/logo/1714118413317.png" alt="Logo" width="40" height="20" class="d-inline-block align-text-top ms-5">
+                    <span class="fw-bold text-light fs-5">Turned In</span>
+                  </a>
                 <div class="d-flex">
                     <div class="badge badge-footer text-bg-light me-2 d-flex">
                         <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" class="icon footer img-fluid" alt="WhatsApp">
@@ -163,11 +170,11 @@
                     </div>
                     <div class="badge badge-footer text-bg-light me-2 d-flex">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" class="icon footer img-fluid" alt="Instagram">
-                        <h6 class="text-secondary fw-normal">tunerdin.id</h6>
+                        <h6 class="text-secondary fw-normal ms-1">tunerdin.id</h6>
                     </div>
                     <div class="badge badge-footer text-bg-light me-2 d-flex">
                         <img src="https://seeklogo.com/images/T/tiktok-logo-B9AC5FE794-seeklogo.com.png" class="icon footer img-fluid" alt="Tiktok">
-                        <h6 class="text-secondary fw-normal">turnedin.id</h6>
+                        <h6 class="text-secondary fw-normal ms-1">turnedin.id</h6>
                     </div>
                 </div>
             </div>
