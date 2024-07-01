@@ -96,3 +96,12 @@ height: 30px;
   margin-right: 10%;
   width: 24px;
 }
+
+.input-file{
+  visibility: hidden;
+  position: absolute;
+}
+
+.hidden{
+  display: none;
+}

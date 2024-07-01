@@ -66,3 +66,41 @@ var data_product = [];
         }
     })
 })()
+
+
+const dropArea = document.getElementById("dropArea");
+
+var data_input = [];
+
+(() => {
+    fetch("http://192.168.18.12:3000/cek-turnitin", { 
+        method: "GET",
+    }).then(res => res.json()).then(hasil => {
+        data_input = hasil;
+
+        for (let i = 0; i < data_input.length; i++) {
+            if (data_input[i].status == "active") {
+               cekTurnitin.innerHTML += `
+                     <div class="py-4 mb-2">
+                            <div class="p-3 mb-0 bg-body-tertiary rounded" id="dropArea">
+                                <input 
+                                    type="file" 
+                                    class="input-file"
+                                    name="file" 
+                                    id="fileInput"
+                                />
+                                <button type="button" class="btn btn-danger float-sm-end mx-2 mt-2">Hapus Semua</button>
+                                <button type="button" for="file-upload" class="btn btn-primary float-sm-end mt-2">Unggah File</button>
+                                <div class="container py-5 m-3">
+                                    <div class="text-center text-secondary" id="fileList" name="kutipan">
+                                        <h4>Cek Turnitin No-Repository</h4>
+                                        <span>TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
+                                        <span>.docx .pdf aja ya</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+            }
+        }
+    })
+})()

@@ -1,6 +1,8 @@
-//hint 2
+let data ={}
 
-//hint 1
+function handleInput(e, index){
+    
+}
 
 function login(){
     const data = {
