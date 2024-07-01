@@ -82,3 +82,17 @@ height: 30px;
 .banner-item{
   width: 950px;
 }
+
+.search-bar{
+  width: 600px;
+}
+
+.select-bar{
+  width: 200px;
+  margin-right: 8%;
+}
+
+.button-bar{
+  margin-right: 10%;
+  width: 24px;
+}
