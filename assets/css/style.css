@@ -7,7 +7,9 @@
   padding: 0;
 }
 
-
+.fz-10{
+  font-size: 10px;
+}
 .fz-12{
   font-size: 12px;
 }
@@ -22,7 +24,7 @@
 }
 
 .img-about{
-    width: 280px;
+  width: 280px;
   margin-top: -70px;
 }
 
@@ -48,13 +50,13 @@
 }
 
 .icon-footer{
- width: 20px;
- height: 20px;
+ width: 15px;
+ height: 15px;
 }
 
 .badge-footer{
 width: max-content;
-height: 30px;
+height: 25px;
 }
 
 .card-login{
@@ -80,7 +82,7 @@ height: 30px;
 }
 
 .banner-item{
-  width: 950px;
+  width: 880px;
 }
 
 .search-bar{
@@ -89,7 +91,8 @@ height: 30px;
 
 .select-bar{
   width: 200px;
-  margin-right: 8%;
+  margin-right: 10%;
+  margin-left: -25%;
 }
 
 .button-bar{
@@ -120,4 +123,16 @@ height: 30px;
 
 .mb-10{
   margin-bottom: -5px;
+}
+
+.footer-button{
+  margin-right: -5%;
+}
+
+.navigasi{
+  margin-right: 8%;
+}
+
+.container-custom{
+  padding: 0px 250px !important;
 }
