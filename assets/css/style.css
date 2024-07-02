@@ -105,3 +105,19 @@ height: 30px;
 .hidden{
   display: none;
 }
+
+.text-primary{
+  color: #252e64 !important;
+}
+
+.btn-primary{
+  background-color: #252e64 !important;
+}
+
+.fst-normal{
+  font-size: small;
+}
+
+.mb-10{
+  margin-bottom: -5px;
+}
