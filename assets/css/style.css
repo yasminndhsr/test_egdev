@@ -7,11 +7,19 @@
   padding: 0;
 }
 
+.fz-9{
+  font-size: 9px !important;
+}
+
 .fz-10{
   font-size: 10px;
 }
 .fz-12{
   font-size: 12px;
+}
+
+.fz-15{
+  font-size: 13px !important;
 }
 
 .text-small{
@@ -135,4 +143,55 @@ height: 25px;
 
 .container-custom{
   padding: 0px 250px !important;
+}
+
+.card-turnitin{
+  width: 750px;
+}
+
+.button-turnitin{
+  width: fit-content;
+  margin-inline-end: 20%;
+}
+
+.card-upload{
+  width: 700px;
+}
+
+.form-whatsapp{
+  column-width: 20px;
+}
+
+.card-parafrase{
+  width: 700px;
+}
+
+.border-between{
+  border-right: 1px solid rgb(177,175,175);
+}
+
+/*Media Queries*/
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px){
+  .responsive-img{
+    max-width: 90%;
+  }
+}
+
+/*Media Queries*/
+/*Mobile*/
+@media (min-width: 300px) and (max-width: 767px){
+  .responsive-img{
+    max-width: 100%;
+  }
+  .container-custom{
+    padding: 0px 0px;
+  }
+  .card-upload{
+    width: 100% !important;
+  }
+  .border-between{
+    border-right: none;
+    border-bottom: 1px solid rgb(177,175,175);
+  }
 }
