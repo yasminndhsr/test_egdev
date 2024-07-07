@@ -17,7 +17,7 @@
             <img src="/assets/img/logo.png" alt="Logo" width="45" height="24" class="d-inline-block align-text-top ms-5">
             <span class="fw-bold">Turned In</span>
           </a>
-          <div class="collapse navbar-collapse justify-content-center align-items-center navigasi" id="navbarNav">
+          <div class="navigasi d-none d-xl-block" id="navbarNav">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a class="nav-link" href="/sarang-freelance.html">Cek Pesanan</a>
@@ -46,76 +46,88 @@
         <div class="container py-4">
         <form>
             <div class="d-flex justify-content-between">
-                <div class="card shadow rounded-3 mx-auto w-100 w-xl-75 card-upload">
+                <div class="card shadow border-0 mx-auto card-upload">
                     <div class="card-body fw-bold mt-3">
                         <h6>CEK TURNITIN NO-REPOSITORY</h6>
-                        <div class="card shadow border-0 my-4 ms-4 me-4">
-                            <div class="p-3 mb-0 bg-body-tertiary rounded" id="dropArea">
-                                <input 
-                                    type="file" 
-                                    class="input-file"
-                                    name="file" 
-                                    id="fileInput"
-                                />
-                                <button type="button" class="btn btn-danger float-sm-end mx-2 mt-2 btn-sm">Hapus Semua</button>
-                                <button type="button" for="file-upload" class="btn btn-primary float-sm-end mt-2 btn-sm">Unggah File</button>
-                                <div class="container py-5 m-3 fw-semi">
-                                    <div class="text-center text-secondary" id="fileList" name="kutipan">
-                                        <h5>Cek Turnitin No-Repository</h5>
-                                        <span class="fw-medium">TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
-                                        <span class="fw-medium">.docx .pdf aja ya</span>
+                        <div class="container py-5">
+                            <div class="container">
+                                <div class="row mt-1">
+                                    <div class="card shadow border-0 p-3 mb-1 bg-body-tertiary rounded">
+                                        <div class="p-3 mb-0 bg-body-tertiary rounded" id="dropArea">
+                                            <input 
+                                                type="file" 
+                                                class="input-file"
+                                                name="file" 
+                                                id="fileInput"
+                                            />
+                                            <div class="d-flex justify-content-end m-1">
+                                                <button type="button" class="btn btn-primary float-sm-end mx-2 mt-2 btn-sm">Unggah File</button>
+                                                <button type="button" for="file-upload" class="btn btn-danger float-sm-end mt-2 btn-sm">Hapus Semua</button>
+                                            </div>
+                                            <div class="container py-5 mb-5 mt-5 m-3 fw-semi">
+                                                <div class="text-center text-secondary" id="fileList" name="kutipan">
+                                                    <h5>Cek Turnitin No-Repository</h5>
+                                                    <span class="fw-medium">TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
+                                                    <span class="fw-medium">.docx .pdf aja ya</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Form Section -->
-                    <div class="container mb-4 py-2 p-5">
-                        <div class="row">
-                            <div class="col-6 border-end fw-bold">
-                                <span class="fz-15">1. Filter pilih sesuai kebutuhan yaa</span>
-                                <div class="form-check fw-normal text-secondary fz-15">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" name="kutipan">
-                                    <label class="form-check-label" for="flexCheckDefault1">Kecualikan Kutipan</label>
-                                </div>
-                                <div class="form-check fw-normal text-secondary fz-15">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" name="daftar-pustaka">
-                                    <label class="form-check-label" for="flexCheckDefault2">Kecualikan Daftar Pustaka</label>
-                                </div>
-                                <div class="form-check fw-normal text-secondary fz-15">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" name="sumber">
-                                    <label class="form-check-label" for="flexCheckDefault3">Kecualikan Sumber yang kurang dari</label>
-                                </div>
-                            </div>
-                            <div class="col-6 py-0 p-5 fz-15">
-                                <span class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</span>
-                                <div class="row g-3 align-items-center">
-                                    <div class="d-flex align-items-center justify-content-center gap-3 mb-2 mt-4 ">
-                                        <div class="col-auto">
-                                            <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" alt="WhatsApp Logo">
-                                        </div>
-                                        <div class="col-auto">
-                                            <input type="text" class="form-control fz-12 form-control-sm" placeholder="62xxxxxxxxx" name="WhatsApp">
-                                        </div>
+                    <div class="container mb-5 px-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 border-between pb-3 pb-xl-0 fw-bold">
+                                    <span class="fz-15">1. Filter pilih sesuai kebutuhan yaa</span>
+                                    <div class="form-check fw-normal text-secondary fz-15">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" name="kutipan">
+                                        <label class="form-check-label" for="flexCheckDefault1">Kecualikan Kutipan</label>
                                     </div>
-                                    <div class="col-auto mt-0 ms-2">
-                                        <div class="form-check text-secondary">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckPromo" name="promo">
-                                            <label class="form-check-label" for="flexCheckPromo">Mau dapet info promo / update Turned In ga?</label>
-                                            <div class="text-dark fw-bold py-2 mt-2">
-                                                <span>Jumlah: Rp 0</span>
-                                            </div>
-                                            <div class="mb-3 text-dark fw-semi py-2">
-                                                <label for="referralCode" class="form-label form-control-sm">Referral Code (Opsional)</label>
-                                                <input type="text" class="form-control form-control-sm" id="referralCode" name="referral">
-                                            </div>
-                                        </div>
+                                    <div class="form-check fw-normal text-secondary fz-15">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" name="daftar-pustaka">
+                                        <label class="form-check-label" for="flexCheckDefault2">Kecualikan Daftar Pustaka</label>
+                                    </div>
+                                    <div class="form-check fw-normal text-secondary fz-15">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" name="sumber">
+                                        <label class="form-check-label" for="flexCheckDefault3">Kecualikan Sumber yang kurang dari</label>
                                     </div>
                                 </div>
+                                <div class="col-12 col-xl-6 px-0 px-xl-5 pt-xl-0 pt-3 fz-15">
+                                    <span class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</span>
+                                    <div class="row g-3 align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center gap-3 mb-2 mt-4 ">
+                                            <div class="col-auto">
+                                                <div class="fz-12 fw-600"></div>
+                                                <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" viewbox="0 0 20 20" alt="WhatsApp Logo">
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="text" class="form-control fz-12 form-control-sm" placeholder="62xxxxxxxxx" name="WhatsApp">
+                                            </div>
+                                            <div class="col-auto"></div>
+                                        </div>
+                                        <div class="col-auto mt-0 ms-2">
+                                            <div class="form-check text-secondary">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckPromo" name="promo">
+                                                <label class="form-check-label" for="flexCheckPromo">Mau dapet info promo / update Turned In ga?</label>
+                                                <div class="text-dark fw-bold py-2 mt-2">
+                                                    <span>Jumlah: Rp 0</span>
+                                                </div>
+                                                <div class="mb-3 text-dark fw-semi py-2">
+                                                    <label for="referralCode" class="form-label form-control-sm">Referral Code (Opsional)</label>
+                                                    <input type="text" class="form-control form-control-sm" id="referralCode" name="referral">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-center py-4">
-                            <a type="button" class="btn btn-danger" onclick="cekTurnitin()">Submit</a>
+                            <div class="d-flex justify-content-center py-4">
+                                <a type="button" class="btn btn-danger" onclick="cekTurnitin()">Submit</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Form Section End -->
@@ -125,13 +137,13 @@
         </div>
 
        <!--Product Info-->
-       <div class="w-100 bg-primary mt-5">
+       <div class="w-100 bg-primary mt-5 mb-5">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
             <div class="row">
-                <div class="col-4 align-items-center">
+                <div class="col-12 col-xl-4 align-items-center">
                     <img src="/assets/img/cartoon1.png" alt="" class="img-fluid img-about">
                 </div>
-                <div class="col-8 mt-5">
+                <div class="ol-12 col-xl-6 mt-5 mb-3 py-4">
                     <div class="text-center fw-bold text-light">
                         <h3 class="mb-3">Cek Plagiasi Turnitin itu apa sih?</h3>
                         <p class="fw-normal text-start">Turned In adalah layanan cek plagiasi otomatis yang 
@@ -145,40 +157,40 @@
     <!--Product Info End-->
 
         <!-- Benefits Section -->
-        <div class="container mt-5 py-5">
+        <div class="container mt-5 p-5">
             <div class="text-center">
-                <h3 class="fw-bold mb-2">Biar apa pake turned in?</h3>
-                <h4 class="fw-normal mb-0 text-warning">Biar apa pake turned in?</h4>
+                <h3 class="fw-semibold teks">Biar apa pake turned in?</h3>
+                <h6 class="fw-semi mb-0 text-warning">Biar apa pake turned in?</h6>
             </div>
-        </div> 
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="w-100 bg-primary mt-5 py-4">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between footer-button">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="https://turnedin.id/img/logo/1714118413317.png" alt="Logo" width="40" height="20" class="d-inline-block align-text-top ms-5">
-                    <span class="fw-bold text-light fs-5">Turned In</span>
-                  </a>
-                <div class="d-flex">
-                    <div class="badge badge-footer text-bg-light me-2 d-flex">
-                        <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" class="icon-footer img-fluid" alt="WhatsApp">
-                        <h6 class="text-secondary fw-normal fz-12">+6288229171372</h6>
-                    </div>
-                    <div class="badge badge-footer text-bg-light me-2 d-flex">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" class="icon-footer img-fluid" alt="Instagram">
-                        <h6 class="text-secondary fw-normal ms-1 fz-12">tunerdin.id</h6>
-                    </div>
-                    <div class="badge badge-footer text-bg-light me-2 d-flex">
-                        <img src="https://seeklogo.com/images/T/tiktok-logo-B9AC5FE794-seeklogo.com.png" class="icon-footer img-fluid" alt="Tiktok">
-                        <h6 class="text-secondary fw-normal ms-1 fz-12">turnedin.id</h6>
-                    </div>
+  <!-- Footer -->
+ <footer class="w-100 bg-primary mt-5 py-4">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between footer-button">
+            <a class="navbar-brand" href="/index.html">
+                <img src="https://turnedin.id/img/logo/1714118413317.png" alt="Logo" width="40" height="20" class="d-inline-block align-text-top ms-5">
+                <span class="fw-bold text-light fs-5">Turned In</span>
+              </a>
+            <div class="d-block d-xl-flex ms-1">
+                <div class="badge badge-footer text-bg-light me-2 d-flex">
+                    <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" class="icon-footer img-fluid" alt="WhatsApp">
+                    <h6 class="text-secondary fw-normal fz-12">+6288229171372</h6>
+                </div>
+                <div class="badge badge-footer text-bg-light me-2 d-flex">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" class="icon-footer img-fluid" alt="Instagram">
+                    <h6 class="text-secondary fw-normal ms-1 fz-12">tunerdin.id</h6>
+                </div>
+                <div class="badge badge-footer text-bg-light me-2 d-flex">
+                    <img src="https://seeklogo.com/images/T/tiktok-logo-B9AC5FE794-seeklogo.com.png" class="icon-footer img-fluid" alt="Tiktok">
+                    <h6 class="text-secondary fw-normal ms-1 fz-12">turnedin.id</h6>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer End -->
+    </div>
+</footer>
+<!-- Footer End -->
      <script src="/assets/js/upload.js"></script>
      <script src="/assets/js/turnitin.js"></script>
 </body>

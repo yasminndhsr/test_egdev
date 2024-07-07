@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Translate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <%- include("../../partials/header") %>
+    <!--Header End-->
+
+    <!-- Main Content -->
+    <main>
+        <div class="container mb-5"></div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="card shadow border-0 mx-auto card-upload">
+                    <div class="card-body fw-bold">
+                        <h6>JASA TRANSLATE</h6>
+                        <div class="container py-1">
+                            <div class="container">
+                                <div class="row mt-5">
+                                    <div class="card shadow border-0 my-4 ms-4 me-4">
+                                        <div class="p-3 mb-0 bg-body-tertiary rounded">
+                                            <button type="button" class="btn btn-danger float-sm-end mx-2 btn-sm">Hapus Semua</button>
+                                            <button type="button" class="btn btn-primary float-sm-end btn-sm">Unggah File</button>
+                                            <div class="container py-5">
+                                                <div class="text-center text-secondary">
+                                                    <h5>Jasa Translate</h5>
+                                                    <span class="fw-medium">TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
+                                                    <span class="fw-medium">.docx .pdf .pptx</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Section -->
+                    <div class="container mt-1 py-2 p-5">
+                        <div class="row">
+                            <div class="col-6 border-end fw-bold fz-15">
+                                <span>1. Pilih translate ke bahasa apa yaa</span>
+                                <label class="form-label mt-3 fw-normal fz-15">Translate ke bahasa</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Pilih Bahasa</option>
+                                    <option value="1">English</option>
+                                    <option value="2">Indonesian</option>
+                                    <option value="3">German </option>
+                                  </select>
+                            </div>
+                            <div class="col-6 py-0 p-3 fw-bold fz-15">
+                                <span>2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</span>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" alt="WhatsApp Logo">
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="text" class="form-control" placeholder="62xxxxxxxxx">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check text-secondary">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckPromo">
+                                            <label class="form-check-label fw-normal" for="flexCheckPromo">Mau dapet info promo / update Turned In ga?</label>
+                                            <div class="text-dark fw-bold py-2">
+                                                <span>Jumlah: Rp 0</span>
+                                            </div>
+                                            <div class="mb-3 text-dark fw-semi py-2">
+                                                <label for="referralCode" class="form-label">Referral Code (Opsional)</label>
+                                                <input type="text" class="form-control" id="referralCode">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center py-5">
+                            <button type="button" class="btn btn-danger">Order</button>
+                        </div>
+                    </div>
+                    <!-- Form Section End -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="w-100 bg-primary mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="/assets/img/cartoon1.png" alt="" class="img-fluid img-about">
+                    </div>
+                    <div class="col-8 mt-5">
+                        <div class="text-center fw-bold text-light">
+                            <h3>Apa itu Turnedin?</h3>
+                            <p class="fw-normal">Turnedin adalah layanan cek plagiasi otomatis berbasis turnitin PERTAMA di Indonesia!!</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="container mt-5 py-5">
+            <div class="text-center">
+                <h3 class="fw-bold mb-2">Biar apa pake turned in?</h3>
+                <h4 class="fw-normal mb-0 text-warning">Biar apa pake turned in?</h4>
+            </div>
+        </div> 
+    </main>
+
+    <!-- Footer -->
+    <%- include("../../partials/footer") %>
+    <!-- Footer End -->
+</body>
+</html>
